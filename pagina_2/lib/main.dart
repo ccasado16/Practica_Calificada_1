@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 void main() {
   runApp(MyApp());
@@ -40,8 +41,13 @@ class _RegistroWidgetState extends State<RegistroWidget> {
         child: ListView(
           children: <Widget>[
             Container(
+                margin: const EdgeInsets.only(top: 10),
+                child: SvgPicture.asset(
+                  "assets/nyan.svg",
+                  width: 150,
+                )),
+            Container(
               alignment: Alignment.center,
-              margin: const EdgeInsets.only(top: 30),
               padding: const EdgeInsets.all(20),
               child: const Text(
                 "Regístrese",
