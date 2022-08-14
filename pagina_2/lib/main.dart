@@ -83,17 +83,18 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                 controller: passControlador,
                 decoration: const InputDecoration(
                     border: OutlineInputBorder(), labelText: "Contraseña"),
+                obscureText: true,
               ),
             ),
             Container(
               // campo para confirmar la contraseña
               padding: const EdgeInsets.all(10),
               child: TextField(
-                controller: cpassControlador,
-                decoration: const InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: "Confirme su contraseña"),
-              ),
+                  controller: cpassControlador,
+                  decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: "Confirme su contraseña"),
+                  obscureText: true),
             ),
             Container(
                 // Boton iniciar sesión
