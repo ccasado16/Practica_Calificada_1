@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,6 +40,12 @@ class _WidgetPrincipalState extends State<WidgetPrincipal> {
         padding: const EdgeInsets.all(10),
         child: ListView(
           children: <Widget>[
+            Container(
+                margin: const EdgeInsets.only(top: 50),
+                child: SvgPicture.asset(
+                  "assets/robot.svg",
+                  width: 110,
+                )),
             Container(
                 // titulo login
                 alignment: Alignment.center,
