@@ -8,12 +8,10 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  static const String titulo = 'Login - Pagina 1';
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: titulo,
+      title: "Pagina 2",
       home: Scaffold(
         body: RegistroWidget(),
       ),
